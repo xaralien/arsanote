@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+/* Fonts */
+body {
+    font-family: 'Mukta', sans-serif;
+    background-color: #F3F3F3;
+}
+
+/* Colors */
+:root {
+    --color-default: #222222;
+    --color-primary: #CB9224;
+    --color-secondary: #fff;
+    --color-third: #9a8743;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# galerycards
+--------------------------------------------------------------*/
+
+.galeryhead {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(99deg, #337CCF -10.35%, #FFC436 111.7%);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+
+.card-live {
+    box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+    background-color: #fff;
+    width: 1300px;
+    height:430px;
+    padding: 20px;
+    overflow: hidden;
+    margin-top:5rem;
+
+}
+
+.img-gallery{
+    border-radius:30px!important;
+    background: linear-gradient(0deg, #000 10.86%, rgba(0, 0, 0, 0.00) 51.29%)!important;
+
+}
+
+.img-shadow{
+    /* content:''; */
+    border-radius: 30px;
+    background: linear-gradient(0deg, #000 10.86%, rgba(0, 0, 0, 0.00) 51.29%);
+    position:absolute;
+}
+
+
+.portfolio-container{
+    display: flex!important;
+    flex-wrap: wrap!important;
+}
+
+.wrapper-title{
+    margin-top:2rem;
+}
+
+
+.wrapper-image{
+width:100%;
+height:70%;
+padding:10px;
+object-fit: cover;
+border-radius:30px!important;
+}
+
+.portfolio {
+    margin-top: 5%;
+}
+
+.section-title h2 {
+    color: var(--color-primary);
+}
+
+.judulacara {
+    color: var(--color-primary);
+}
+
+.gallery1 {
+    color: var(--color-secondary);
+    border-radius: 4px;
+    padding: 7px 25px 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 30px;
+    background-color: var(--color-primary);
+    text-decoration: none;
+    height: 39px;
+}
+
+.gallery2 {
+    color: var(--color-primary);
+    border-radius: 4px;
+    padding: 7px 25px 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 30px;
+    border: 2px solid var(--color-primary);
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# seaarchbar
+--------------------------------------------------------------*/
+
+.form {
+
+    position: relative;
+}
+
+.height {
+    margin-top: -30px;
+    max-width: 100%;
+
+}
+
+.form .bi-search {
+
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    color: #9ca3af;
+
+}
+
+.form span {
+
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 2px solid #d1d5db;
+
+}
+
+.left-pan {
+    padding-left: 7px;
+}
+
+.left-pan i {
+
+    padding-left: 10px;
+}
+
+.form-input {
+
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 30px;
+    box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+.form-input:focus {
+
+    box-shadow: none;
+    border: none;
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  column-count: 4;
+  font-family: arial;
+}
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+.gallery-item figure {
+  margin: 0;
+  position: relative;
+}
+.gallery-item figcaption {
+  font-style: italic;
+  padding: 8px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 3px;
+  color: #fff;
+  height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 0 0 14px 14px;
+}
+.gallery-item img {
+  width: 100%;
+  border-radius: 14px;
+}
+.gallery-item p {
+  margin: 0;
+  padding: 8px;
+}
+
+@media screen and (max-width: 500px) {
+  .gallery {
+    column-count: 1;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  .gallery {
+    column-count: 3;
+  }
+}
+
+

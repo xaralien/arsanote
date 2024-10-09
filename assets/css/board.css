@@ -1,0 +1,745 @@
+/* general styles */
+
+body {
+  font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+
+
+.sidebar-dividers {
+  border-top: 1px solid black;
+  width: 109%;
+}
+
+.vertical-line {
+  border: none;
+  height: 100%; /* Set the height of the vertical line as needed */
+  width: 1px; /* Set the width of the vertical line */
+  background-color: #000; /* Set the color of the vertical line */
+  margin: 0;
+}
+
+.boards .container {
+  border-radius: 30px;
+padding: 25px;
+background: #fff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.wrapper {
+  padding: 1rem;
+}
+
+.boards .btn-board {
+  border-radius: 15px;
+background-color: rgba(0, 0, 0, 0.80);
+color: #fff;
+
+}
+
+.btnsave {
+  border-radius: 15px;
+background-color: rgba(0, 0, 0, 0.80);
+color: #fff;
+}
+
+.btncancel {
+  border-radius: 15px;
+background-color: rgba(0, 0, 0, 0.80);
+color: #fff;
+}
+
+.btnaddlist{
+  border-radius: 15px;
+background-color: rgba(0, 0, 0, 0.80);
+color: #fff;
+}
+
+.btnaddcard{
+  border-radius: 15px;
+background-color: rgba(0, 0, 0, 0.80);
+color: #fff;
+}
+/* column styles */
+
+.column__list {
+  display: grid;
+  align-items: start;
+  /* uncomment these lines if you want to have the standard Trello behavior instead of the column wrapping */
+   grid-auto-flow: column;
+    grid-auto-columns: minmax(360px, 1fr); 
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent content from wrapping to the next line */
+}
+
+.column__item {
+  border-radius: 12px;
+  margin-right: 20px;
+  padding: 5px;
+  background-color: #dfe3e6;
+  background: #ebecf0;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+      width: 300px;
+}
+
+.column__title--wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: .25rem;
+  align-items: center;
+}
+
+.column__title--wrapper h2 {
+  color: #17394d;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+.column__title--wrapper i {
+  text-align: right;
+  color: #798d99;
+}
+
+.column__item--cta {
+  padding: .25rem;
+  display: flex;
+  color: #798d99;
+}
+
+.column__item--cta i {
+  margin-right: .25rem;
+}
+
+/* card styles */
+
+.card__item {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 0 rgba(9, 45, 66, 0.25);
+  padding: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.30);
+  max-width: 250px;
+}
+
+.card__title {
+color: #17394d;
+margin-bottom: 0.75rem;
+word-wrap: break-word; /* Add this line to allow word break */
+max-height: 3.6rem; /* You can adjust this value based on your design */
+overflow: hidden;
+}
+
+.card__list {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: .5rem;
+  margin: .5rem 0;
+  padding: 20px;
+  overflow: auto;
+}
+
+.card__tag {
+  font-size: .75rem;
+  padding: .1rem .5rem;
+  border-radius: .25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: .75rem;
+  display: inline-block;
+}
+
+.card__image {
+  width: 100%;
+  margin-bottom: .25rem;
+}
+
+/* sticker colors */
+
+.card__tag--design {
+  background-color: #61bd4f;
+}
+
+.card__tag--browser {
+  background-color: #c377e0;
+}
+
+.card__tag--mobile {
+  background-color: #f2d600;
+}
+
+.card__tag--high {
+  background-color: #eb5a46;
+}
+
+.card__tag--low {
+  background-color: #00c2e0;
+}
+
+.card__title {
+  color: #17394d;
+  margin-bottom: .75rem;
+}
+
+/* card actions */
+
+.card__actions {
+  display: flex;
+  align-items: center;
+}
+
+.card__actions--wrapper i {
+  color: #798d99;
+  margin-right: .5rem;
+}
+
+.card__actions--text {
+  color: #798d99;
+  font-size: .8rem;
+  margin-left: -.25rem;
+  margin-right: .5rem;
+}
+
+.card__avatars {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.card__avatars--item {
+  margin-left: .25rem;
+  width: 28px;
+  height: 28px;
+}
+
+.avatar__image {  
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Menghapus bullet points dari <li> saja */
+li {
+  list-style: none;
+}
+
+
+
+.modal-dialog {
+background: #FFF;
+max-width: 962px;
+border-radius: 30px;
+}
+
+.cardtit input{
+
+  width: 500px;
+  height: 64px;
+text-indent: 25px;
+border-radius: 15px;
+border: 2px solid rgba(0, 0, 0, 0.20);
+
+background: rgba(0, 0, 0, 0.05);
+
+
+}
+
+
+.carddesc textarea{
+
+width: 500px;
+height: 300px;
+text-indent: 25px;
+border-radius: 15px;
+border: 2px solid rgba(0, 0, 0, 0.20);
+background: rgba(0, 0, 0, 0.05);
+
+}
+
+.carddate input{
+
+width: 500px;
+height: 64px;
+text-indent: 25px;
+border-radius: 15px;
+border: 2px solid rgba(0, 0, 0, 0.20);
+
+background: rgba(0, 0, 0, 0.05);
+
+
+}
+
+.inputcheck input{
+
+width: 500px;
+height: 64px;
+text-indent: 25px;
+border-radius: 15px;
+border: 2px solid rgba(0, 0, 0, 0.20);
+
+background: #FFF;
+
+
+}
+
+.inputcheck{
+border-radius: 15px;
+background: rgba(0, 0, 0, 0.20);
+width: fit-content;
+}
+
+.activity input{
+
+width: 500px;
+height: 64px;
+text-indent: 25px;
+border-radius: 15px;
+border: 2px solid rgba(0, 0, 0, 0.20);
+
+background: #FFF;
+
+
+}
+
+.cardavt .tagss {
+position: relative;
+top: 80px;
+left: 8px;
+background-color: #F5F5F5;
+width: 30px;
+height: 30px;
+color: black;
+border-radius: 50%;
+}
+
+.cardavt .tags {
+position: relative;
+top: 88px;
+left: 8px;
+background-color: #F5F5F5;
+width: 30px;
+height: 30px;
+color: black;
+border-radius: 50%;
+}
+
+
+
+.btnlabels {
+background: rgba(0, 0, 0, 0.80);
+padding: 15px;
+cursor: pointer;
+border-radius: 15px;
+color: #dfe3e6;
+font-size: 16px;
+}
+
+.bx {
+font-size: 1.1rem;
+}
+
+.dropdowns {
+position: absolute;
+width: 350px;
+border-radius: 15px;
+border: 1px solid rgba(0, 0, 0, 0.20);
+margin-top: 0.3rem;
+background: white;
+
+visibility: hidden;
+opacity: 0;
+transform: translateY(0.5rem);
+transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+}
+
+.dropdowns a {
+display: flex;
+align-items: center;
+column-gap: var(--gap);
+padding: 0.8rem 1rem;
+text-decoration: none;
+color: black;
+}
+
+.dropdowns a:hover {
+background-color: var(--color);
+color: white;
+}
+
+
+.show {
+visibility: visible;
+opacity: 1;
+transform: translateY(0rem);
+}
+
+.arrow {
+transform: rotate(180deg);
+transition: 0.2s ease;
+}
+
+
+.dropdowns1 {
+  position: absolute;
+  width: 220px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  margin-top: 0.3rem;
+  background: white;
+  
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+  }
+  
+  .dropdowns1 a {
+  display: flex;
+  align-items: center;
+  column-gap: var(--gap);
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: black;
+  }
+  
+  .dropdowns1 a:hover {
+  background-color: var(--color);
+  color: white;
+  }
+  
+
+#labelInput {
+display: inline-block;
+margin-top: 20px;
+padding: 10px;
+border: 1px solid #ccc;
+transition: background-color 0.3s;
+}
+
+.icon{
+background-color:#D9D9D9 ;
+width: 20px;
+height: 20px;
+padding: 5px;
+border-radius: 50%;
+}
+
+.labeling .labelsinput{
+
+width: 180px;
+height: 28px;
+text-indent: 25px;
+border-radius: 15px;
+border: 2px solid rgba(0, 0, 0, 0.20);
+
+background: rgba(0, 0, 0, 0.05);
+
+
+}
+
+.labeling .color{
+
+width: 25px;
+height: 25px;
+text-indent: 25px;
+border-radius: 50%;
+border: 2px solid rgba(0, 0, 0, 0.20);
+
+background: rgba(0, 0, 0, 0.05);
+
+
+}
+
+
+
+#labelinput placeholder{
+font-size: 10px;
+}
+
+.btncreate{
+border-radius: 3.75px;
+background: rgba(0, 0, 0, 0.80);
+color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+.btn.btncek {
+background: rgba(0, 0, 0, 0.80);
+padding: 15px;
+cursor: pointer;
+border-radius: 15px;
+color: #dfe3e6;
+font-size: 16px;
+}
+
+.bx {
+font-size: 1.1rem;
+}
+
+.workspace .dropdown-contents {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 45px; /* Adjust the top position to move the dropdown down or up */
+  right: 20px; /* Adjust the left position to move the dropdown left or right */
+  z-index: 250;
+}
+
+.show {
+visibility: visible;
+opacity: 1;
+transform: translateY(0rem);
+}
+
+.arrow1 {
+transform: rotate(180deg);
+transition: 0.2s ease;
+}
+
+.icon{
+background-color:#D9D9D9 ;
+width: 20px;
+height: 20px;
+padding: 5px;
+border-radius: 50%;
+}
+
+.labeling1 .labelsinput1{
+
+width: 200px;
+height: 40px;
+text-indent: 25px;
+border-radius: 15px;
+border: 2px solid rgba(0, 0, 0, 0.20);
+
+background: rgba(0, 0, 0, 0.05);
+
+
+}
+
+.workspace1 .dropdown-contentsboard {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 45px; /* Adjust the top position to move the dropdown down or up */
+  right: 20px; /* Adjust the left position to move the dropdown left or right */
+}
+
+.button4 {
+  position: relative;
+  z-index: 200;
+
+}
+
+.btn-4 {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.20) !important;
+  border: 1px solid rgba(255, 255, 255, 0.50) !important; /* Use border instead of stroke for a button */
+  backdrop-filter: blur(7.5px)!important;
+  border-radius: 50% !important;
+  
+}
+
+.workspace1 .dropdown-contents10 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 45px; /* Adjust the top position to move the dropdown down or up */
+  right: 20px; /* Adjust the left position to move the dropdown left or right */
+  z-index: 250;
+}
+
+.workspace1 .dropdown-contents {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 45px; /* Adjust the top position to move the dropdown down or up */
+  right: 20px; /* Adjust the left position to move the dropdown left or right */
+  z-index: 250;
+}
+
+
+
+
+
+
+.btn.btndate {
+background: rgba(0, 0, 0, 0.80);
+padding: 15px;
+cursor: pointer;
+border-radius: 15px;
+color: #dfe3e6;
+font-size: 16px;
+}
+
+.bx {
+font-size: 1.1rem;
+}
+
+.dropdowns2 {
+position: absolute;
+width: 220px;
+box-shadow: var(--shadow);
+border-radius: 15px;
+border: 1px solid rgba(0, 0, 0, 0.20);
+margin-top: 0.3rem;
+background: white;
+
+visibility: hidden;
+opacity: 0;
+transform: translateY(0.5rem);
+transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+}
+
+.dropdowns2 a {
+display: flex;
+align-items: center;
+column-gap: var(--gap);
+padding: 0.8rem 1rem;
+text-decoration: none;
+color: black;
+}
+
+.dropdowns2 a:hover {
+background-color: var(--color);
+color: white;
+}
+
+.show {
+visibility: visible;
+opacity: 1;
+transform: translateY(0rem);
+}
+
+.arrow3 {
+transform: rotate(180deg);
+transition: 0.2s ease;
+}
+
+.icon{
+background-color:#D9D9D9 ;
+width: 20px;
+height: 20px;
+padding: 5px;
+border-radius: 50%;
+}
+
+.labeling1 .labelsinput1{
+
+width: 200px;
+height: 40px;
+text-indent: 25px;
+border-radius: 15px;
+border: 2px solid rgba(0, 0, 0, 0.20);
+
+background: rgba(0, 0, 0, 0.05);
+
+
+}
+
+input[type="date"]{
+
+width: 200px;
+height: 40px;
+text-indent: 25px;
+border-radius: 15px;
+border: 2px solid rgba(0, 0, 0, 0.20);
+
+background: rgba(0, 0, 0, 0.05);
+
+
+}
+
+
+.workspace1 .btn-work {
+  border-radius: 15px;
+background-color: rgba(0, 0, 0, 0.80);
+}
+
+.workspace1 .dropdown-contents1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 45px; /* Adjust the top position to move the dropdown down or up */
+  right: 20px; /* Adjust the left position to move the dropdown left or right */
+}
+
+.workspace1 .dropdown-contents1 a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.workspace1 .dropdown-contents1 a:hover {
+  background-color: #ddd;
+}
+
+.workspace1 .dropdown:hover .dropdown-contents1 {
+  display: block;
+}
+
+.workspace1 .container {
+  border-radius: 30px;
+padding: 25px;
+background: #fff;
+}
+
+.workspace1 .btn-work1 {
+  border-radius: 15px;
+background-color: rgba(0, 0, 0, 0.80);
+}

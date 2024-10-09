@@ -1,0 +1,64 @@
+
+
+.loginview .container {
+    background: #fff ;
+    border-radius: 30px;
+    width: 1274px;
+    height: 583px;
+}
+
+.loginview select {
+  width: 604.177px;
+  height: 64px;
+text-indent: 25px;
+border-radius: 30px;
+border-radius: 30px;
+border: 2px solid rgba(0, 0, 0, 0.20);
+
+background: rgba(0, 0, 0, 0.05);
+
+}
+
+
+    .heads input{
+
+        width: 604.177px;
+        height: 64px;
+     text-indent: 25px;
+     border-radius: 30px;
+     border-radius: 30px;
+border: 2px solid rgba(0, 0, 0, 0.20);
+
+background: rgba(0, 0, 0, 0.05);
+
+    }
+
+   
+.heads .eml {
+  position: relative;
+
+  top: 88px;
+
+  left: 35px;
+
+  width: 25px;
+
+  height: 25px;
+
+}
+
+      .heads .psw {
+        position: relative;
+        bottom: 88px;
+        left: 35px;
+        width: 25px;
+        height: 25px;
+      }
+
+      .primarys .btn-primarys{
+width: 604.183px;
+height: 64px;
+        border-radius: 15px;
+background-color: rgba(0, 0, 0, 0.80);
+color: white;
+      }

@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+/* Fonts */
+body {
+    font-family: 'Mukta', sans-serif;
+    background-color: #F3F3F3;
+}
+
+/* Colors */
+:root {
+    --color-default: #222222;
+    --color-primary: #CB9224;
+    --color-secondary: #fff;
+    --color-third: #9a8743;
+}
+
+
+
+/*--------------------------------------------------------------
+# galeryhead
+--------------------------------------------------------------*/
+
+.galeryhead1 {
+    width: 100%;
+    height: 50vh;
+    background: url("../image/Group\ 164\ \(1\).png") top center no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 70px;
+  }
+  
+
+.blogtext{
+    padding: 20px;
+    color: var(--color-secondary);
+
+}
+
+.blogtext h1{
+  font-weight: 700;
+
+}
+
+
+.wrapper-body {
+    max-width: 1300px;
+    position: static;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+
+
+/*--------------------------------------------------------------
+# seaarchbar
+--------------------------------------------------------------*/
+
+.form {
+
+    position: relative;
+}
+
+.height {
+    margin-top: -30px;
+    max-width: 100%;
+
+}
+
+.form .search{
+
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    color: #9ca3af;
+
+}s
+
+.form span {
+
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 2px solid #d1d5db;
+
+}
+
+.left-pan {
+    padding-left: 7px;
+}
+
+.left-pan i {
+
+    padding-left: 10px;
+}
+
+.form-input {
+
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 30px;
+    box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+.form-input:focus {
+
+    box-shadow: none;
+    border: none;
+}
+
+
+/*--------------------------------------------------------------
+# events card
+--------------------------------------------------------------*/
+.eventcard .card {
+    padding: 30px;
+    margin-left: 20px;
+    border: none;
+    width: 707px;
+    flex-shrink: 0;
+    border-radius: 30px;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .eventcard .card img{
+    border-radius: 30px;
+  }
+
+.eventcard {
+    margin-top: 8%;
+}
+
+  .prevbutton,
+.nextbutton {
+  position: absolute;
+  transform: translateY(600%);
+  width: 40px; /* Adjust button width as needed */
+  height: 40px; /* Adjust button height as needed */
+  background-color: #cb9224;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 20;
+  border: none;
+}
+
+.prevbutton {
+  left: 100px; /* Adjust the left position of the previous button */
+}
+
+.nextbutton {
+  right: 100px; /* Adjust the right position of the next button */
+}
+
+.filters {
+    margin-top: 15%;
+    padding: 0;
+}
+
+#portfolio-flters1 {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+}
+
+#portfolio-flters1 li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+}
+
+ #portfolio-flters1 li:hover,
+ #portfolio-flters1 li.filter-active {
+    color: #151515;
+    background: rgba(0, 0, 0, 0.10);
+    border-radius: 30px;
+}
+
+ #portfolio-flters1 li:last-child {
+    margin-right: 0;
+}
+
+
+.eventcard .headerblog {
+    border-radius: 30px;
+background-color: rgba(205, 166, 60, 0.10);
+width: 60px;
+height: 30px;
+padding-left: 10px;
+padding-top: 2px;
+color: var(--color-primary);
+}
+
+.headerblog1 {
+    color: var(--color-primary);
+    font-family: Mukta;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 129.2%; /* 25.84px */
+    text-transform: capitalize;
+}
+
+.headerblog3{
+    color: rgba(0, 0, 0, 0.80);
+font-family: Mukta;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 129.2%; /* 31.008px */
+}
+
+.headerblog2 {
+    color: rgba(0, 0, 0, 0.50);
+font-family: Mukta;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 129.2%; /* 18.088px */
+}

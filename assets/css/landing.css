@@ -1,0 +1,46 @@
+:root {
+  --color-default: #222222;
+  --color-primary: #CB9224;
+  --color-secondary: #fff;
+  --color-third: #9a8743;
+}
+
+
+/* general styles */
+
+body {
+  font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+.wrapper {
+  padding: 1rem;
+}
+
+.home .container {
+  border-radius: 30px;
+padding: 80px;
+background: url("../image/arsanote.png") top center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.allwork .container {
+  border-radius: 30px;
+padding: 20px;
+background: #fff;
+}
+
+.home .card {
+  width: 300px;
+  height: 300px;
+  background: #FFF;
+  border: none;
+}
+
+.home .card img{
+  border-radius: 15px;
+}
+
+.card p {
+  font-size: 13px;
+}

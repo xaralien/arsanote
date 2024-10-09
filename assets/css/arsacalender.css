@@ -1,0 +1,32 @@
+.logcard .container {
+width: 1275px;
+height: 300px;
+border-radius: 30px;
+background: #FFF;
+}
+
+.devider {
+    border-top: 1px solid black;
+    margin: 0 1rem 1rem;
+}
+
+.log {
+    color: rgba(0, 0, 0, 0.80);
+
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.logactivity{
+    color: rgba(0, 0, 0, 0.80);
+
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 129.2%; /* 25.84px */
+text-transform: capitalize;
+}

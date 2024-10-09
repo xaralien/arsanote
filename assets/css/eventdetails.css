@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+/* Fonts */
+body {
+    font-family: 'Mukta', sans-serif;
+    background-color: #F3F3F3;
+}
+
+/* Colors */
+:root {
+    --color-default: #222222;
+    --color-primary: #CB9224;
+    --color-secondary: #fff;
+    --color-third: #9a8743;
+}
+
+
+.wrapper-body {
+    max-width: 1300px;
+    position: static;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+
+
+
+/*--------------------------------------------------------------
+# events card
+--------------------------------------------------------------*/
+
+.headerblog {
+    border-radius: 30px;
+background-color: rgba(205, 166, 60, 0.10);
+color: var(--primary, #CB9224);
+font-family: Mukta;
+font-size: 16px;
+padding-left: 18px;
+padding-top: 5px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+width: 100px;
+height: 40.625px;
+}
+
+.headerblog1 {
+    color: var(--color-primary);
+font-family: Mukta;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 129.2%; /* 41.344px */
+text-transform: capitalize;
+}
+
+.headerblog3{
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Mukta;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 129.2%; /* 38.76px */
+}
+
+.headerblog2 {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Mukta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 129.2%; /* 25.84px */
+}
+
+.eventimg img {
+    
+    width: 600.455px;
+height: 800px;
+flex-shrink: 0;
+border-radius:30px;
+}

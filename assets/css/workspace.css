@@ -1,0 +1,142 @@
+:root {
+    --color-default: #222222;
+    --color-primary: #CB9224;
+    --color-secondary: #fff;
+    --color-third: #9a8743;
+  }
+  
+  
+  /* general styles */
+  
+  body {
+    font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+  }
+
+  .workspace .btn.btn-work {
+    border-radius: 15px;
+background-color: rgba(0, 0, 0, 0.80);
+color: #FFF;
+  }
+  
+  .wrapper {
+    padding: 1rem;
+  }
+  
+  .workspace .container {
+    border-radius: 30px;
+  padding: 25px;
+  background: #fff;
+  }
+  
+  .allworkspace .card {
+    border-radius: 30px;
+  padding: 15px;
+  background: #fff;
+
+  }
+  
+  .home .card {
+    width: 300px;
+    height: 300px;
+    background: #FFF;
+    border: none;
+  }
+  
+  .workspace .card img{
+    border-radius: 15px;
+    height: 200px;
+  }
+  
+  .card p {
+    font-size: 13px;
+  }
+
+   
+
+ 
+
+.sidebar-dividere {
+    width:115% ;
+    border: 1px solid black;
+  }
+
+  .dropcard .card {
+    border-radius: 30px;
+    background-color: #FFF;
+  }
+
+  .dropcard {
+    border-radius: 30px;
+  }
+.labelwork{
+
+    width: 284px;
+height: 56px;
+  text-indent: 25px;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.20);
+  
+  background: rgba(0, 0, 0, 0.05);
+  
+  
+  }
+
+  #labelInput {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s;
+  }
+
+  .workspace .dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 45px; /* Adjust the top position to move the dropdown down or up */
+    right: 20px; /* Adjust the left position to move the dropdown left or right */
+    z-index: 250;
+  }
+  
+  .workspace .dropdown-contents9 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 45px; /* Adjust the top position to move the dropdown down or up */
+    right: 20px; /* Adjust the left position to move the dropdown left or right */
+  }
+  
+  
+
+
+  .divisions{
+    border-radius: 15px;
+border: 2px solid rgba(0, 0, 0, 0.20);
+  }
+
+ 
+
+  .button3 {
+    position: relative;
+    z-index: 200;
+  
+  }
+
+  .btn-3 {
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.20) !important;
+    border: 1px solid rgba(255, 255, 255, 0.50) !important; /* Use border instead of stroke for a button */
+    backdrop-filter: blur(7.5px)!important;
+    border-radius: 50% !important;
+    z-index: 200;
+    
+  }
+
